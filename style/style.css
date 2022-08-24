@@ -752,6 +752,7 @@ color: #757575;
 .condition {
     color: var(--brand-color);
     text-decoration: underline;
+    text-decoration-skip-ink: none;
 }
 .check-text span {
     width: 16px;
