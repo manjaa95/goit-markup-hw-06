@@ -41,7 +41,7 @@ button {
   }
 .container {
     width: 100%;
-max-width: 1230px;
+max-width: 1200px;
 margin-left: auto;
 margin-right: auto;
 padding-left: 15px;
@@ -274,7 +274,7 @@ padding: 27px 0;
 /* team */
 .team {
     background-color: #F5F4FA;
-    height: 648px;
+    min-height: 648px;
 }
 .team-list {
     display: flex;
@@ -487,6 +487,9 @@ margin-bottom: 50px;
 .footer-logo {
 margin-bottom: 20px;
 }
+.footer-contacts-list {
+    width: 231px;
+}
 .footer-adress-item {
     margin-bottom: 9px;
 }
@@ -562,7 +565,6 @@ margin-left: 70px;
 }
 .input-btn {
     display: flex;
-
 }
 .footer-input-title {
     font-weight: 700;
@@ -587,7 +589,13 @@ letter-spacing: 0.03em;
 margin-right: 12px;
 padding-left: 16px;
 color: rgba(255, 255, 255, 0.6);
+outline: transparent;
 background-color: transparent;
+transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-modal-input:focus {
+    border-color: var(--brand-color);
 }
 .footer-input-btn {
     display: flex;
